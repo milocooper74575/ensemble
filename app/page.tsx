@@ -1,8 +1,8 @@
 "use client";
 
-import ActionHeader from "./ActionHeader";
-import Left from "./Left";
-import Right from "./Right";
+import ActionHeader from "@/components/layout/ActionHeader";
+import Left from "@/components/layout/Left";
+import Right from "@/components/layout/Right";
 
 export default function Home() {
   return (

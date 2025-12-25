@@ -15,7 +15,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import ModelSelector from "../ModelSelector";
+import ModelSelector from "../selector/ModelSelector";
 import { ModelFormProps, formSchema } from "./interface";
 
 const ModelForm: React.FC<ModelFormProps> = ({ onSubmit }) => {

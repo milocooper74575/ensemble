@@ -9,9 +9,9 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Settings2 } from "lucide-react";
-import ModelForm from "../ModelForm";
+import ModelForm from "../form/ModelForm";
 import { useState } from "react";
-import { formSchema } from "../ModelForm/interface";
+import { formSchema } from "../form/interface";
 import z from "zod";
 
 const ModelSetting = () => {

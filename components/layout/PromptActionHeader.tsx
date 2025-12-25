@@ -3,10 +3,10 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import ModelSetting from "../ModelSetting";
+import ModelSetting from "../sheet/ModelSetting";
 import { Braces, Wrench } from "lucide-react";
 import { useState } from "react";
-import ExampleDialog from "../ExampleDialog";
+import ExampleDialog from "../dialog/ExampleDialog";
 
 const PromptActionHeader = () => {
   const [showExampleDialog, setShowExampleDialog] = useState(false);

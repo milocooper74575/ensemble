@@ -51,7 +51,9 @@ const ModelSelector: React.FC<ModelSelectorProps> = ({
         </SelectGroup>
         <SelectGroup>
           <SelectLabel>Claude</SelectLabel>
-          <SelectItem value="claude-sonnet-4-5-20250929">claude-sonnet-4-5-20250929</SelectItem>
+          <SelectItem value="claude-sonnet-4-5-20250929">
+            claude-sonnet-4-5-20250929
+          </SelectItem>
           <SelectItem value="claude-3-opus">claude-3-opus</SelectItem>
           <SelectItem value="claude-3-sonnet">claude-3-sonnet</SelectItem>
           <SelectItem value="claude-3-haiku">claude-3-haiku</SelectItem>
