@@ -1,8 +1,23 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
+import TitleDropdownMenu from "../TitleDropdownMenu";
+import dayjs from "dayjs";
+import { useState, useEffect } from "react";
 
 const ActionHeader = () => {
+  const [timestamp, setTimestamp] = useState<string>("");
+
+  useEffect(() => {
+    setTimestamp(dayjs().format("YYYY-MM-DD HH:mm:ss"));
+  }, []);
+
   return (
-    <div className="p-6 flex items-center justify-end-safe gap-2">
+    <div className="p-6 flex items-end justify-between">
+      <div>
+        <TitleDropdownMenu />
+        <div className="text-xs pl-2">上次修改:{timestamp || "加载中..."}</div>
+      </div>
       <div className="flex items-center gap-4">
         <Button
           variant="outline"
