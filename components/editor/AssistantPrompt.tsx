@@ -1,5 +1,5 @@
-import { Input } from "@/components/ui/input";
 import { Trash2 } from "lucide-react";
+import { EnsembleEditor } from "@/packages/@ensemble/editor/src";
 
 const AssistantPrompt = () => {
   return (
@@ -9,7 +9,7 @@ const AssistantPrompt = () => {
         <Trash2 size={18} />
       </div>
       <div className="px-4 pb-4">
-        <Input placeholder="Enter your prompt here..." className="w-full" />
+        <EnsembleEditor />
       </div>
     </div>
   );
